@@ -1,0 +1,47 @@
+<!-- 
+GUI Assignment: hw3
+David Sun, UMass Lowell Computer Science, david_sun@student.uml.edu 
+Copyright (c) 2023 by David Sun. All rights reserved. May be freely copied 
+or excerpted for educational purposes with credit to the author. 
+updated by DS on November 14, 2023 at 11:36 PM 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Multiplication Table Generator</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">                    <!-- link to external css -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>   <![endif]-->
+</head>
+<body>
+    <header>
+        <h1>Multiplication Table Generator</h1>
+    </header>
+    <form>
+        <label for="minColVal">Smallest Column Value:</label><br>
+        <input type="number" id="minColVal" name="col1"><br>    <!-- val of "for" and "id" should be identical to bind them together -->
+        <span id="error1"></span>
+        <br>                                                    <!-- extra line break for readability -->
+        <label for="maxColVal">Biggest Column Value:</label><br>
+        <input type="number" id="maxColVal" name="col2"><br>
+        <span id="error2"></span>
+        <br>    
+        <label for="minRowVal">Smallest Row Value:</label><br>
+        <input type="number" id="minRowVal" name="row1"><br>
+        <span id="error3"></span>
+        <br>    
+        <label for="maxRowVal">Biggest Row Value:</label><br>
+        <input type="number" id="maxRowVal" name="row2"><br>
+        <span id="error4"></span>
+        <br>
+        <input type="submit" value="Generate Table">            <!-- submit button -->
+    </form>
+    <script src="myScript.js"></script>                        <!-- link to external javascript -->
+
+    <!-- Container for the multiplication table -->
+    <div id="tableContainer"></div>
+</body>
+
+</html>
